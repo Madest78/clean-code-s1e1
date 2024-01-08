@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.aaa img {
+.aaa-img {
   width: 100%;
 }
-.aaa .more_inf {
+.more_inf {
   font-family: fantasy, cursive;
 }
 
