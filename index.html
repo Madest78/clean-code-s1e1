@@ -13,7 +13,7 @@
       charset="utf-8"
     >
   </head>
-  <body>
+  <body class="page">
     <div class="header">
       <img class="img" src="./eisenhower-matrix.jpg">
       <a
@@ -25,22 +25,27 @@
     </div>
     <div class="main-content">
       <p id="adding-task">
-        <label for="new-task">Add Item</label>
+        <label class="label">Add Item</label>
         <div class="wrapper">
           <input
             id="new-task"
             class="task"
             type="text"
           >
-          <button>Add</button>
+          <button class="add">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
+      <h3 class="label">Todo</h3>
       <ul id="task-in-progress">
-      <li>
-        <input type="checkbox">
+      <li id="container">
+        <input
+          id="mark"
+          type="checkbox"
+        >
         <label class="task">Pay Bills</label>
-        <input type="text"
+        <input
+          id="input-text"
+          type="text"
           class="task"
         >
         <button class="edit">Edit</button>
@@ -48,10 +53,17 @@
           <img src="./remove.svg">
         </button>
       </li>
-      <li class="edit-mode">
-        <input type="checkbox">
+      <li
+        id="container"
+        class="edit-mode"
+      >
+        <input
+          id="mark"
+          type="checkbox"
+          >
         <label class="task">Go Shopping</label>
         <input
+          id="input-text"
           type="text"
           value="Go Shopping"
           class="task"
@@ -62,12 +74,17 @@
         </button>
       </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="label">Completed</h3>
       <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
+        <li id="container">
+          <input
+            id="mark"
+            type="checkbox"
+            checked
+            >
           <label class="task">See the Doctor</label>
           <input
+            id="input-text"
             type="text"
             class="task"
           >
